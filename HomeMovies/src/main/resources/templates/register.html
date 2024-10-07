@@ -10,7 +10,7 @@
 			<div class="navbar bg-dark" style="border-bottom: 1px solid #FFF; box-shadow: 0px 0px 10px #bfbfbf; background: #b71c1c;">
 			    <h1><a href="..." style="text-decoration:none; color:#252525; margin-left:1%;"><img src="..." alt="" style="width:15%;"></a></h1>
 			    <div class="..." style="display:-webkit-box; margin-right:5%;">
-			        <a href="..." style="color:#fff; margin-right:15%;" class="nav-link">Register</a>
+			        <a href="..." style="color:#fff; margin-right:15%;" class="nav-link">Log in</a>
 			    </div>
 			</div>
 		</header>
@@ -20,16 +20,12 @@
 				<form th:action="@{/saveUser}" th:object=${user} method="POST">
 					<div class="card">
 						<div class="card-header">
-							<h3>Log in</h3>
+							<h3>Register</h3>
 						</div>
 						<div class="card-body">
 							<div class="dorm-group">
 								<label>USERNAME</label>
 								<input th:field="*{username}" type="text" class="form-control"/>
-							</div>
-							<div class="dorm-group">
-								<label>EMAIL</label>
-								<input th:field="*{email}" type="email" class="form-control"/>
 							</div>
 							<div class="dorm-group">
 								<label>PASSWORD</label>
