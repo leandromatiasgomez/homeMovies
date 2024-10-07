@@ -53,5 +53,10 @@ public class UserController {
 		service.delete(id);
 		return"redirect:/listUser";
 	}
-
+	
+	@GetMapping("/login")
+	public String login(Model model) {
+		model.addAttribute("user", new User());
+		return "login";
+	}
 }
