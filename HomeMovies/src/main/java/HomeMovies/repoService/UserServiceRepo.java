@@ -1,4 +1,4 @@
-package HomeMovies.repo;
+package HomeMovies.repoService;
 
 import java.util.List;
 import java.util.Optional;

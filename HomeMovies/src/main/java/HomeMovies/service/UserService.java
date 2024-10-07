@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 import HomeMovies.model.User;
 import HomeMovies.repo.UserRepo;
-import HomeMovies.repo.UserServiceRepo;
+import HomeMovies.repoService.UserServiceRepo;
 
 @Service 
 public class UserService implements UserServiceRepo{

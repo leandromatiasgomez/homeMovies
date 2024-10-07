@@ -20,7 +20,7 @@ public class User {
 	public String username;
 	
 	@Column
-	public String mail;
+	public String email;
 	
 	@Column
 	public String password;
@@ -30,13 +30,13 @@ public class User {
 	
 	public long getId() { return this.id; }
 	public String getUsername() { return this.username; }
-	public String getMail() { return this.mail; }
+	public String getEmail() { return this.email; }
 	public String getPassword() { return this.password; }
 	public long getIdGrade() { return this.id_grade; }
 	
 	public void setId(long id) { this.id = id; }
 	public void setUsername(String name) { this.username = name; }
-	public void setMail(String mail) { this.mail = mail; } 
+	public void setEmail(String mail) { this.email = mail; } 
 	public void setPassword(String password) { this.password = password; }
 	public void setIdGrade(long id_grade) { this.id_grade = id_grade; }
 

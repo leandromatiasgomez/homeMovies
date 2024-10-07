@@ -14,16 +14,17 @@
 				<tr>
 					<th>ID</th>
 					<th>USERNAME</th>
-					<th>MAIL</th>
+					<th>EMAIL</th>
 					<th>PASSWORD</th>
-					<th>ID_GRADE</th>
+					<th>ID GRADE</th>
+					<th>ACTIONS</th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr th:each="user:${users}">
 					<td th:text="${user.id}"></td>
 					<td th:text="${user.username}"></td>
-					<td th:text="${user.mail}"></td>
+					<td th:text="${user.email}"></td>
 					<td th:text="${user.password}"></td>
 					<td th:text="${user.id_grade}"></td>
 					<td>

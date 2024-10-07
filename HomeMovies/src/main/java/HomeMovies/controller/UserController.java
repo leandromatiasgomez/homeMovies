@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import HomeMovies.model.User;
-import HomeMovies.repo.UserServiceRepo;
+import HomeMovies.repoService.UserServiceRepo;
 
 @Controller 
 @RequestMapping 
