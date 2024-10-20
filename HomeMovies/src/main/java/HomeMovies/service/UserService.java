@@ -10,12 +10,12 @@ import HomeMovies.model.User;
 import HomeMovies.repo.UserRepo;
 import HomeMovies.repoService.UserServiceRepo;
 
-@Service 
+@Service
 public class UserService implements UserServiceRepo{
-
+	
 	@Autowired
 	private UserRepo data;
-	
+
 	@Override
 	public List<User> list() {
 		return (List<User>)data.findAll();
@@ -40,5 +40,5 @@ public class UserService implements UserServiceRepo{
 	public void delete(int id) {
 		data.deleteById((long) id);
 	}
-	
+
 }

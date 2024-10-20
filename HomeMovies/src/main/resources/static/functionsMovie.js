@@ -1,7 +1,7 @@
-function eliminate(id){
+function eliminateMovie(id){
 	swal({
 	  title: "Are you sure?",
-	  text: "Once deleted, you will not be able to recover this imaginary file!",
+	  text: "Once deleted, you will not be able to recover this movie!",
 	  icon: "warning",
 	  buttons: true,
 	  dangerMode: true,
@@ -9,20 +9,20 @@ function eliminate(id){
 	.then((YES) => {
 	  if (YES) {
 		$.ajax({
-			url:"/deleteUser/"+id,
+			url:"/deleteMovie/"+id,
 			success: function(res){
 				console.log(res);
 			},
 		});
-	    swal("Poof! Your imaginary file has been deleted!", {
+	    swal("Poof! Your movie has been deleted!", {
 	      icon: "success",
 	    }).then((yes) => {
 			if(yes){
-				location.href="/listUser";
+				location.href="/listMovie";
 			}
 		});
 	  } else {
-	    swal("Your imaginary file is safe!");
+	    swal("The movie is safe!");
 	  }
 	});
 }

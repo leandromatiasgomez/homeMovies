@@ -8,27 +8,31 @@
 <body>
 	<div class="container mt-4">
 		<div class="col-sm-6">
-			<form th:action="@{/saveUser}" th:object=${user} method="POST">
+			<form th:action="@{/saveMovie}" th:object=${movie} method="POST">
 				<div class="card">
 					<div class="card-header">
-						<h3>User Module</h3>
+						<h3>Edit Movie</h3>
 					</div>
 					<div class="card-body">
 						<div class="dorm-group">
-							<label>USERNAME</label>
-							<input th:field="*{username}" type="text" class="form-control"/>
+							<label>id</label>
+							<input th:field="*{id}" type="number" class="form-control"/>
 						</div>
 						<div class="dorm-group">
-							<label>EMAIL</label>
-							<input th:field="*{email}" type="email" class="form-control"/>
+							<label>TITLE</label>
+							<input th:field="*{title}" type="text" class="form-control"/>
 						</div>
 						<div class="dorm-group">
-							<label>PASSWORD</label>
-							<input th:field="*{password}" type="text" class="form-control"/>
+							<label>SYNNPOSIS</label>
+							<input th:field="*{synopsis}" type="text" class="form-control"/>
 						</div>
 						<div class="dorm-group">
-							<label>ID ROLE</label>
-							<input th:field="*{id_role}" type="number" class="form-control"/>
+							<label>PRICE PER DAY</label>
+							<input th:field="*{priceperday}" type="number" class="form-control"/>
+						</div>
+						<div class="dorm-group">
+							<label>IMAGE</label>
+							<input th:field="*{image}" type="text" class="form-control"/>
 						</div>
 					</div>
 					<div class="card-footer">

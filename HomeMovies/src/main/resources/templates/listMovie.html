@@ -7,29 +7,27 @@
 </head>
 <body>
 	<div class="container mt-4">
-	<a th:href="@{/newUser}" class="btn btn-primary">New</a>
+	<a th:href="@{/newMovie}" class="btn btn-primary">New</a>
 	<br>
 		<table class="table">
 			<thead>
 				<tr>
 					<th>ID</th>
-					<th>USERNAME</th>
-					<th>EMAIL</th>
-					<th>PASSWORD</th>
-					<th>ID ROLE</th>
+					<th>TITLE</th>
+					<th>SYNOPSIS</th>
+					<th>PRICE PER DAY</th>
 					<th>ACTIONS</th>
 				</tr>
 			</thead>
 			<tbody>
-				<tr th:each="user:${users}">
-					<td th:text="${user.id}"></td>
-					<td th:text="${user.username}"></td>
-					<td th:text="${user.email}"></td>
-					<td th:text="${user.password}"></td>
-					<td th:text="${user.id_role}"></td>
+				<tr th:each="movie:${movies}">
+					<td th:text="${movie.id}"></td>
+					<td th:text="${movie.title}"></td>
+					<td th:text="${movie.synopsis}"></td>
+					<td th:text="${movie.priceperday}"></td>
 					<td>
-						<a th:href="@{/editUser/}+${user.id}" class="btn btn-warning">Edit</a>
-						<a th:onclick="eliminate([[${user.id}]])" class="btn btn-danger">Delete</a>
+						<a th:href="@{/editMovie/}+${movie.id}" class="btn btn-warning">Edit</a>
+						<a th:onclick="eliminateMovie([[${movie.id}]])" class="btn btn-danger">Delete</a>
 					</td>
 				</tr>
 			</tbody>
@@ -37,6 +35,6 @@
 	</div>
 	<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-	<script src="functionsUser.js"></script>
+	<script src="functionsMovie.js"></script>
 </body>
 </html>

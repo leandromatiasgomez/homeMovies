@@ -11,9 +11,13 @@
 			<form th:action="@{/saveUser}" th:object=${user} method="POST">
 				<div class="card">
 					<div class="card-header">
-						<h3>User Module</h3>
+						<h3>Edit User</h3>
 					</div>
 					<div class="card-body">
+						<div class="dorm-group">
+							<label>id</label>
+							<input th:field="*{id}" type="number" class="form-control"/>
+						</div>
 						<div class="dorm-group">
 							<label>USERNAME</label>
 							<input th:field="*{username}" type="text" class="form-control"/>

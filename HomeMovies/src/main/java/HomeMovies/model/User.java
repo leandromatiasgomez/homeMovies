@@ -10,12 +10,12 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name= "users")
 public class User {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column
 	public long id;
-	
+
 	@Column
 	public String username;
 	
@@ -26,18 +26,46 @@ public class User {
 	public String password;
 	
 	@Column
-	public long id_grade;
-	
-	public long getId() { return this.id; }
-	public String getUsername() { return this.username; }
-	public String getEmail() { return this.email; }
-	public String getPassword() { return this.password; }
-	public long getIdGrade() { return this.id_grade; }
-	
-	public void setId(long id) { this.id = id; }
-	public void setUsername(String name) { this.username = name; }
-	public void setEmail(String mail) { this.email = mail; } 
-	public void setPassword(String password) { this.password = password; }
-	public void setIdGrade(long id_grade) { this.id_grade = id_grade; }
+	public long id_role;
 
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public long getId_role() {
+		return id_role;
+	}
+
+	public void setId_role(long id_role) {
+		this.id_role = id_role;
+	}
+	
 }

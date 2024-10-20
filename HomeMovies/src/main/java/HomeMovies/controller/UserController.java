@@ -16,15 +16,15 @@ import HomeMovies.model.User;
 import HomeMovies.repoService.UserServiceRepo;
 
 @Controller 
-@RequestMapping 
+@RequestMapping
 public class UserController {
-	
+
 	@Autowired
 	private UserServiceRepo service;
 	
 	@GetMapping("/listUser")
 	public String list(Model model) {
-		List<User> users= service.list();
+		List<User> users = service.list();
 		model.addAttribute("users", users);
 		return "listUser";
 	}
@@ -36,22 +36,22 @@ public class UserController {
 	}
 	
 	@PostMapping("/saveUser")
-	public String save(@Validated User u, Model model) {
+	public String save(@Validated User u) {
 		service.save(u);
 		return "redirect:/listUser";
 	}
 	
 	@GetMapping("/editUser/{id}")
 	public String edit(@PathVariable int id, Model model) {
-		Optional<User>user=service.listId(id);
+		Optional<User> user = service.listId(id);
 		model.addAttribute("user", user);
-		return "formUser";
+		return "editUser";
 	}
 	
 	@GetMapping("/deleteUser/{id}")
-	public String delete(@PathVariable int id, Model model) {
+	public String delete(@PathVariable int id) {
 		service.delete(id);
-		return"redirect:/listUser";
+		return "redirect:/listUser";
 	}
 	
 	@GetMapping("/login")
@@ -65,4 +65,6 @@ public class UserController {
 		model.addAttribute("user", new User());
 		return"register";
 	}
+
+	
 }
