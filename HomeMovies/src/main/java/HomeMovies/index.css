@@ -1,0 +1,168 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-container {
+    margin-top: 20px; /* Espacio entre la navbar y el buscador */
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    width: 400px;
+    height: 50px;
+    padding: 10px;
+    font-size: 16px;
+    color: #000; /* Texto negro */
+    background-color: #fff; /* Fondo blanco para el input */
+    border: 2px solid #fff; /* Borde blanco */
+    border-radius: 8px;
+}
+
+.search-button {
+    height: 50px;
+    padding: 0 20px;
+    font-size: 16px;
+    color: #fff; /* Texto blanco */
+    background-color: #d9d9d9; /* Color del botón */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 5px; /* Espacio entre el input y el botón */
+}
+
+.search-button:hover {
+    background-color: #71767b; /* Color más oscuro al pasar el mouse */
+}
+
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+
+
+.container {
+  width: 100vw;
+  height: 100vh;
+ 
+}
+
+.movie-card1{
+  width: 200px;
+  height: 280px;
+  background: url('https://images-na.ssl-images-amazon.com/images/I/917Pgb5cG3L._SL1500_.jpg');
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  margin: 40px;
+}
+
+
+ 
+
+.movie-card2{
+   width: 200px;
+   height: 280px;
+   background: url(http://is5.mzstatic.com/image/thumb/Video118/v4/67/33/17/673317f2-24ae-6432-40cb-dfc6b51eef1e/source/1200x630bb.jpg);
+  
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  margin: 20px;
+  
+}
+
+.movie-card3{
+   width: 200px;
+   height: 280px;
+   background: url(http://yorkpbnews.net/wp-content/uploads/2018/03/blackpanther.jpg);
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  margin: 20px;
+  
+}
+
+.movie-card4{
+   width: 200px;
+   height: 280px;
+   background: url(https://lumiere-a.akamaihd.net/v1/images/open-uri20150422-12561-18hpovx_f8238c31.jpeg);
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  margin: 20px;
+  
+}
+
+.movie-card5{
+   width: 200px;
+   height: 280px;
+   background: url(http://cdn.playbuzz.com/cdn/ef075a32-76b0-4209-8a6a-182e7b9d9a70/a80a0788-e513-4381-9ebd-f4cd85108a16_560_420.jpg);
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  margin: 20px;
+  
+}
+
+.movie-card6{
+   width: 200px;
+   height: 280px;
+   background: url(https://vignette.wikia.nocookie.net/disney/images/f/f4/Finding_Nemo_-_Film_Poster.jpg/revision/latest?cb=20160317165916);
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  margin: 40px;
+  
+}
+.movie-card7{
+    width: 200px;
+    height: 280px;
+    background: url(https://elrincondelespectador.com/wp-content/uploads/deadpool-y-wolverine-critica.jpg);
+   background-size: cover;
+   background-position: center;
+   display: inline-block;
+   margin: 20px;
+   
+ }
+ 
+ .movie-card8{
+    width: 200px;
+    height: 280px;
+    background: url(https://lumiere-a.akamaihd.net/v1/images/p_coco_19736_fd5fa537.jpeg);
+   background-size: cover;
+   background-position: center;
+   display: inline-block;
+   margin: 20px;
+   
+ }
+ 
+ .movie-card9{
+    width: 200px;
+    height: 280px;
+    background: url(https://pics.filmaffinity.com/white_house_down-432083638-large.jpg);
+   background-size: cover;
+   background-position: center;
+   display: inline-block;
+   margin: 20px;
+   
+ }
+
+ .movie-card10{
+    width: 200px;
+    height: 280px;
+    background: url(https://www.universalpictures.com.ar/tl_files/content/movies/super_mario_bros/posters/01.jpg);
+   background-size: cover;
+   background-position: center;
+   display: inline-block;
+   margin: 20px;
+   
+ }
